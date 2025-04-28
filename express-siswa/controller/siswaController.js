@@ -14,7 +14,7 @@ const tambahSiswa = async (req, res) => {
   if (!username || !email || !password || !nis || !nisn || !nama || !tanggal || !tempat || !alamat || !kelamin || !agama) {
     console.log({
       status: 400,
-      message: 'Semua field wajib diisi!'
+      message: 'Semua field wajib diisi ya!'
     });
     return res.status(400).json({
       status: 400,
